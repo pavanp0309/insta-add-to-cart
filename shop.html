@@ -1,346 +1,522 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>instashop</title>
-    <!--favicon-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!--bootstrap cdn-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Fashion</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./Ass2.png" type="image/x-icon">
+    <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- boostrap icon cdn -->
+    <!-- bootstrap icons cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--aos css-->
+    <!-- AOS animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--link css-->
+    <!-- external css -->
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!--navbar start-->
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand text-success fw-bold" href="#" ><span style="color: orangered;" class="fw-bold">insta</span>shop</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container">
+            <!-- navbarbrand -->
+          <a class="navbar-brand text-info fw-bold" href="#">
+            <img src="./Assets/1.png" class="img-fluid" alt="" style="width: 50px;height: 50px; border-radius: 50%;">
+            Friend's<span style="color: black;"> Fashion</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- nav links -->
+            <ul class="navbar-nav mx-auto text-center mb-2 mb-lg-0 fs-5 fw-bold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./brands.html">Brands</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+              <ul class="navbar-nav ms-auto text-center justify-content-center mb-2 mb-lg-0 ">
+              <!-- login & cart -->
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="./register.html"><i class="bi bi-person"></i></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-          <!--icons-->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./cart.html"><i class="bi bi-cart3 fs-3"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="bi bi-person fs-3"></i></a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
-     <!--navbar end-->
-    <!--Banner for shop page-->
-    <section class=" banner container-fluid">
-      <img src="./Assets/Shop page.png" alt=""class="img-fluid">
-    </section>
-    <div class="container Best_Sellers py-5">
-      <h2>Best Sellers</h2><hr>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick </p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i> <button> Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i>  <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"> <i class="bi bi-cart3"></i> <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i> <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    </div>
-    <div class="container Best_Sellers py-3">
-      <h2>Trendy Deals</h2>
-      <hr>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick </p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i> <button> Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img7.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i>  <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img8.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"> <i class="bi bi-cart3"></i> <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img9.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i> <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="container Best_Sellers py-3">
-      <h2>Top Fashons</h2>
-      <hr>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img10.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick </p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i> <button> Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img18.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i>  <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img19.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"> <i class="bi bi-cart3"></i> <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img13.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i> <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="container Best_Sellers py-3">
-      <h2>Child Time</h2>
-      <hr>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img14.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick </p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i> <button> Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img15.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i>  <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img16.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"> <i class="bi bi-cart3"></i> <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="./Assets/img17.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick</p>
-              <a href="" class="nav-link text-center"><i class="bi bi-cart3"></i> <button>Add to cart</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!--footer start-->
-      <footer class="footer container-fluid mt-2 bg-dark text-white py-3">
-        <div class="container d-sm-none d-none d-md-block d-lg-block">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-              <h5>Get to know US</h5>
-             <p> <a href="" class="nav-link">About Us</a></p>
-              <p><a href="" class="nav-link">Careers</a></p>
-              <p><a href="" class="nav-link">Privacy policy</a></p>
-              <p><a href="" class="nav-link">Services</a></p>
+                <li class="nav-item">
               
-            </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-              <h5>Connect with US</h5>
-              <p> <a href="" class="nav-link">Instagram</a></p>
-              <p><a href="" class="nav-link">twiter</a></p>
-              <p><a href="" class="nav-link">Facebook</a></p>
-              <p><a href="" class="nav-link">whatsup</a></p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-              <h5>Make money with  US</h5>
-              <p> <a href="" class="nav-link"> sell on Instagram</a></p>
-              <p><a href="" class="nav-link">Careers</a></p>
-              <p><a href="" class="nav-link">Privacy policy</a></p>
-              <p><a href="" class="nav-link">Services</a></p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-              <h5>Let Us help You</h5>
-              <p> <a href="" class="nav-link">About Us</a></p>
-              <p><a href="" class="nav-link">Careers</a></p>
-              <p><a href="" class="nav-link">Privacy policy</a></p>
-              <p><a href="" class="nav-link">Services</a></p>
-            </div> 
+                      <!-- cart -icon -->
+                      <i class="bi bi-bag-heart " id="cart-icon"><span id="icon-value">0</span></i>
+                   
+                </li>
+              </ul>
           </div>
         </div>
-          <hr class="d-sm-none d-none d-md-block d-lg-block">
-          <!--copywrite start-->
-          <div class="copywrite text-center">
-            <p>&copy; Insta.shop</p>
-          </div>
-          <!--copywrite End-->
-        </div>
+    </nav>
+    <!-- navbar end -->
+   <!-- Banner section start -->
+   <img src="./Assshopbanner.png" alt="" class="d-block w-100" height="350px">
+   <!-- Banner section end -->
 
-      </footer>
-    <!--footer end-->
-
-    <!--model box for register and login-->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">SignIn</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ <!-- menfashion start -->
+<!-- Header start -->
+ <section class="fashion container mt-5">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+      <h3 class=" display-6 text-start"> <span class="text-primary fw-bold">Men's</span> Fashion</h3>
+    </div>
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+    <a href="./menfashion.html" class="d-flex justify-content-end">View More</a>
+  </div>
+<!-- Header End -->
+  <div class="row g-4 m-3">
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="card">
+          <img src="./AssetsStreet fashion.jpg" class="image-fluid" height=400px alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Breet Style</h5>
+            <div class="d-flex justify-content-between">
+            <p class="card-text"><i class="bi bi-currency-rupee"></i>1500</p>
+            <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+            </div>
           </div>
-          <div class="modal-body">
-        <form action="">
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">email</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enyter your mail">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">password</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" enter password">
-          </div>
-        </form>
-        <!--sign form end-->
-          </div>
-          <div class="modal-footer">
-
-            <button class="btn btn-primary" data-bs-dismiss="modal" type="submit">submit</button>         
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">registration</button>
-          </div>
-
         </div>
       </div>
-    </div>
-    <!--model box-1 end-->
-    <!--model box-2 start-->
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <!--modelbox-title:register-->
-            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Register</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="card">
+          <img src="./Assetsmilan-mens-urban-fashion..jpg" class="image-fluid" height=400px alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Casual outfit</h5>
+            <div class="d-flex justify-content-between">
+            <p class="card-text"><i class="bi bi-currency-rupee"></i>1600</p>
+            <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+            </div>
           </div>
-          <!--register form start-->
-          <div class="modal-body">
-            <form action="">
-              <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">email</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enyter your mail">
-              </div>
-              <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">password</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" enter password">
-              </div>
-              <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">re-password</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" RE-enter password">
-              </div>
-            </form>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="card">
+          <img src="./AssetsCasual wear.jpg" class="image-fluid" height=400px alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Casual Wear</h5>
+            <div class="d-flex justify-content-between">
+            <p class="card-text"><i class="bi bi-currency-rupee"></i>1000</p>
+            <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+            </div>
           </div>
-          <!--register form end-->
-          <div class="modal-footer">
-            <button class="btn btn-primary"  data-bs-dismiss="modal" aria-label="Close">submit</button>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="card">
+          <img src="./Assetsclassy men fashion.jpg" class="card-img-top" height=400px alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Summer trends</h5>
+            <div class="d-flex justify-content-between">
+            <p class="card-text"><i class="bi bi-currency-rupee"></i>1200</p>
+            <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <button class="btn btn-primary">Open first modal</button>
-     
-      <!--scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+  </section>
+    <!-- menfashion end -->
+
+<!-- women's fashion start  -->
+  <!-- Header start -->
+  <section class="fashion container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <h3 class=" display-6 text-start"> <span class="text-primary fw-bold">Women's</span> Fashion</h3>
+      </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+      <a href="./women'sFashion.html" class="d-flex justify-content-end">View More</a>
+    </div>
+<!-- Header End -->
+     <div class="row g-4 m-3">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/pexels-matvalina-24018573.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Breet Style</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>1500</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/pexels-godisable-jacob-226636-1253413.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Casual outfit</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>900</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <!-- parent element-3 -->
+          <div class="card product">
+            <img src="./Assets/pexels-kowalievska-1055691.jpg" class="card-img-top prod-img " alt="...">
+            <!-- parent element-2 -->
+            <div class="card-body  prod-info">
+              <h5 class="card-title prod-title">Casual Wear</h5>
+              <!-- parent element-1 -->
+              <div class="d-flex justify-content-between">
+                
+              <p class="card-text price"><i class="bi bi-currency-rupee"></i>800</p>
+              <button class="btn btn-outline-info fw-bold add-to-cart" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card product">
+            <img src="./Assets/pexels-leonnebrito-1844012.jpg" class="card-img-top prod-img " alt="...">
+            <div class="card-body prod-info">
+              <h5 class="card-title prod-title">Summer trends</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text price"><i class="bi bi-currency-rupee"></i>1000</p>
+              <button class="btn btn-outline-info fw-bold add-to-cart" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </section>
+  <!-- women's fashion end -->
+
+  <!-- Tradition wear section start -->
+    <!-- Header start -->
+    <section class="fashion container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <h3 class=" display-6 text-start"> <span class="text-primary fw-bold">Traditional</span> Wear</h3>
+        </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <a href="./Tradition wear.html" class="d-flex justify-content-end">View More</a>
+      </div>
+<!-- Header End -->
+     <div class="row g-4 m-3">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/half-saree.jpg" class="card-img-top" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Half Saree</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>2000</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/Saree.jpg" class="card-img-top" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Saree</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>1000</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/kurta.jpg" class="card-img-top " height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">kurta</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>5000</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/pancha.jpg" class="card-img-top " height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Silk fancy dhoti</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>500</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </section>
+  <!-- Traditional Wear end -->
+
+  <!-- kids wear section start -->
+   <!-- Header start -->
+   <section class="fashion container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <h3 class=" display-6 text-start"> <span class="text-primary fw-bold">Kid's</span> Fashion</h3>
+      </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+      <a href="./kids wear.html" class="d-flex justify-content-end">View More</a>
+    </div>
+  <!-- Header End -->
+         <div class="row g-4 m-3">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="card">
+              <img src="./Assets/
+k-1.jpg" class="card-img-top" height="400px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Breet Style</h5>
+                <div class="d-flex justify-content-between">
+                <p class="card-text"><i class="bi bi-currency-rupee"></i>700</p>
+                <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="card">
+              <img src="./Assets/
+k-2.jpg" class="card-img-top" height="400px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Casual outfit</h5>
+                <div class="d-flex justify-content-between">
+                <p class="card-text"><i class="bi bi-currency-rupee"></i>900</p>
+                <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="card">
+              <img src="./Assets/
+k-3.jpg" class="card-img-top" height="400px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Casual Wear</h5>
+                <div class="d-flex justify-content-between">
+                <p class="card-text"><i class="bi bi-currency-rupee"></i>800</p>
+                <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="card">
+              <img src="./Assets/
+k-4.jpg" class="card-img-top" height="400px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Summer trends</h5>
+                <div class="d-flex justify-content-between">
+                <p class="card-text"><i class="bi bi-currency-rupee"></i>1000</p>
+                <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- kids section end -->
+
+    <!-- Bags section start -->
+     <!-- header section start -->
+     <section class="fashion container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <h3 class=" display-6 text-start"> <span class="text-primary fw-bold">Bags</span></h3>
+        </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <a href="./Bags.html" class="d-flex justify-content-end">View More</a>
+      </div>
+      <!-- header section end -->
+      <div class="row g-4 m-3">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <!-- shop page -->
+          <div class="card  product">
+            <img src="./Assets/b-1.jpg" class="card-img-top prod-img" height="400px" alt="...">
+            <!-- details of the Product -->
+            <div class="card-body prod-info">
+              <h5 class="card-title prod-title">Luggage Bag</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text price"><i class="bi bi-currency-rupee "></i>2300</p>
+              <button class="btn btn-outline-info fw-bold add-to-cart" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card product">
+            <img src="./Assets/b-2.jpg" class="card-img-top prod-img" height="400px" alt="...">
+            <div class="card-body prod-info">
+              <h5 class="card-title prod-title">Hand bag</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text price"><i class="bi bi-currency-rupee price"></i>600</p>
+              <button class="btn btn-outline-info fw-bold add-to-cart" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card product">
+            <img src="./Assets/b-3.jpg" class="card-img-top prod-img" height="400px" alt="...">
+            <div class="card-body prod-info">
+              <h5 class="card-title prod-title">Travel bag</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text price"><i class="bi bi-currency-rupee"></i>800</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card product">
+            <img src="./Assets/b-4.jpg" class="card-img-top prod-img" height="400px" alt="...">
+            <div class="card-body prod-info">
+              <h5 class="card-title prod-title">Laptop Bag</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text price"><i class="bi bi-currency-rupee"></i>2000</p>
+              <button class="btn btn-outline-info fw-bold add-to-cart" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!--Bags section end  -->
+
+     <!-- Footwear section start -->
+      <!-- header section start -->
+      <section class="fashion container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <h3 class=" display-6 text-start fw-bold"> <span class="text-primary fw-bold">Foot</span>wear</h3>
+          </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <a href="./Footwear.html" class="d-flex justify-content-end">View More</a>
+        </div>
+      <!-- header section end -->
+      <div class="row g-4 m-3">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/flatslipper.jpg" class="card-img-top" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Flats</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>500</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/sneaker.jpg" class="card-img-top" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sneakers</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>1000</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/shoes.jpg" class="card-img-top" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shoes</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>800</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="./Assets/heels.jpg" class="card-img-top" height="400px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Heels</h5>
+              <div class="d-flex justify-content-between">
+              <p class="card-text"><i class="bi bi-currency-rupee"></i>2000</p>
+              <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--footwear section end  -->
+    <!-- subscribe section start -->
+    <section class="subscription container my-5">
+      <div class="bg-dark py-3 rounded-pill text-center" data-aos="zoom-in" data-aos-duration="1000">
+        <h3 class="h text-center text-info">Stay Updated</h3>
+        <p class="text-center mt-3 text-light"> To get update about our new products subscribe to our site.</p>
+        <div class="input-group mb-3 w-50 mx-auto">
+          <input type="text" class="form-control border border-info" placeholder="Enter Your E-mail">
+          <button class="btn btn-outline-info fw-bold" type="button" id="button-addon2">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe section end -->
+    <!-- footer section start -->
+    <div class="footer-section container-fluid p-4 mt-3 bg-dark text-light">
+        <!-- row start -->
+         <div class="row">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+            <h3 class="text-info">Friend's<span class="text-light"> Fashion</span></h3>
+            <p><i class="bi bi-clock"></i> Open hours of Gov<br>Mon-Sat:10AM-9PM</p>
+            <p><i class="bi bi-geo-alt"></i>Kavali, Nellore</p>
+            <p><i class="bi bi-telephone"></i> +91 7093868067</p>
+            <p><i class="bi bi-envelope-at"></i> ff2003@gmail.com</p>
+          </div>
+          <!-- 2nd column -->
+           <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+            <h3>Services</h3>
+            <p>Quality Fabric</p>
+            <p>More Offers</p>
+            <p>On-time Delivery</p>
+            <p>Door Delivery</p>
+           </div>
+           <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+            <h3>Links</h3>
+            <p>Terms&C0nditions</p>
+            <p>Privacy Policy</p>
+            <p>Contact Us</p>
+           </div>
+           <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+            <h3>Contact Us</h3>
+            <p class="text-center">
+              <i class="bi bi-instagram fs-2" style="color: palevioletred;"></i>
+              <i class="bi bi-facebook fs-2" style="color: blue;"></i>
+              <i class="bi bi-twitter fs-2" style="color: skyblue;"></i>
+              <i class="bi bi-snapchat fs-2" style="color: yellow;"></i>
+            </p>
+           </div>
+         </div>
+         <!-- row end -->
+        <!-- 2nd row -->
+         <div class="row border-top p-3">
+          <p class="fs-5 text-center">&copy; Copyright 2024 by <span class="text-info">Friend's</span> Fashion</p>
+         </div>
+    </div>
+    <!-- footer section end -->
+     <!--bootstrap cdb script js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- AOS ANIMATION CDN -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+     <!-- external js -->
+     <script src="shop.js"></script>
+</body>
 </html>
