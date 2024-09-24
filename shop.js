@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     // 🎯step1: loading all the buttons to apply the Functionalities
     let addtocartBtn=document.querySelectorAll(".add-to-cart")
     // console.log(addtocartBtn)
+    // accessing the cart Icon  btn
+    let cartIcon=document.querySelector(".carticon")
+
 
     // 🎯step2 :adding the functionality for buttons
     addtocartBtn.forEach((btn)=>{
@@ -24,7 +27,12 @@ document.addEventListener("DOMContentLoaded",()=>{
 
             AddtoCart(selectedProd)
         })
-    })
+    });
+
+    //🎯 step3: adding functionality for button
+    cartIcon.addEventListener("click",()=>{
+        window.location.href="cart.html"
+    });
 })
 
 
