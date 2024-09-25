@@ -68,9 +68,14 @@ function UpdatecartUi() {
         handledecrement(quantityVal, ele);
     });
 
+    removeBtn.addEventListener("click",()=>{
+      handleRemoveItem(ele)
+    })
+
     // appending the child element to parent
     cartsect.appendChild(cartprod);
   });
+  CartTotal()
 }
 
 // function to increemnt the value
@@ -79,6 +84,7 @@ function handleIncrement(quantityVal, ele) {
   quantityVal.innerText = incr;
   localStorage.setItem("cart",JSON.stringify(cartItems))
   UpdatecartUi();
+  CartTotal()
 }
 
 // function to decreemnt the value
@@ -88,6 +94,35 @@ function handledecrement(quantityVal, ele) {
     quantityVal.innerText = ele.quantity;
     localStorage.setItem("cart",JSON.stringify(cartItems))
     UpdatecartUi();
+    CartTotal()
 
   }
 }
+
+
+// function to handle the removeitems
+function handleRemoveItem(ele){
+  cartItems=cartItems.filter((item)=>item.title !== ele.title)
+  localStorage.setItem("cart",JSON.stringify(cartItems))
+    UpdatecartUi();
+    CartTotal()
+}
+
+
+function CartTotal(){
+  let cartTotalele=document.querySelector(".cart-total")
+  let total=cartItems.reduce((total,ele)=>total+ele.Price*ele.quantity,0)
+  cartTotalele.innerText=total
+  
+}
+
+
+// callbacks 
+// events 
+// funtions 
+// dom 
+// bom 
+// arrays,objects ,conditions variables etc..
+
+
+// promises ,conditional functions destructuring events

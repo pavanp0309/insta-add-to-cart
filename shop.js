@@ -61,7 +61,7 @@ function UpdateCartIconValue(){
     let IconVal=document.querySelector(".icon-val")
     let Iconvalue=cartItems.reduce((total,ele)=>total+ele.quantity,0)
     //    updating the Icon
-    IconVal.innerText=Iconvalue
+    IconVal.textContent=Iconvalue
 }
 
 function LoadCart(){
